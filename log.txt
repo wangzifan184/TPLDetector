@@ -1,0 +1,83 @@
+E:\CLionProjects\myProject\activemq_mini\
+	E:\CLionProjects\myProject\activemq_mini\ActiveMQXASession.java
+		info.setType(onePhase ? 109 : 103)<050dd320c3866cc8bd58d57d3accaa3f>
+		throw toXAException(e)<5601928f5af007418401144e03921814>
+		throw toXAException(e)<5601928f5af007418401144e03921814>
+		throw toXAException(e)<5601928f5af007418401144e03921814>
+		throw toXAException(e)<5601928f5af007418401144e03921814>
+		throw toXAException(e)<5601928f5af007418401144e03921814>
+		throw toXAException(e)<5601928f5af007418401144e03921814>
+		throw toXAException(e)<5601928f5af007418401144e03921814>
+		throw toXAException(e)<5601928f5af007418401144e03921814>
+		throw new XAException(-5)<87f216fbebe896441bdce83948320ade>
+		throw new XAException(-6)<87f216fbebe896441bdce83948320ade>
+		throw new XAException(-6)<87f216fbebe896441bdce83948320ade>
+		throw new XAException(-6)<87f216fbebe896441bdce83948320ade>
+		throw new XAException(-6)<87f216fbebe896441bdce83948320ade>
+		throw new XAException(-7)<87f216fbebe896441bdce83948320ade>
+		throw new JMSException("Session's XAResource has not been enlisted in a distributed transaction.")<90ec5c24acd2b2b1d527cff3138be85f>
+		info.setId(this.packetIdGenerator.generateId())<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setXid(this.activeXid)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		this.connection.syncSendPacket((Packet)info)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		checkClosedXA()<bcd8b0c2eb1fce714eab6cef0d771acc>
+		setXid((Xid)null)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		setXid((Xid)null)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		setXid((Xid)null)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setId(this.packetIdGenerator.generateId())<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setXid(x)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setType(102)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setId(this.packetIdGenerator.generateId())<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setType(105)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		this.connection.syncSendPacket((Packet)info)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		checkClosedXA()<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setId(this.packetIdGenerator.generateId())<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setXid(x)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setType(101)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		this.connection.syncSendPacket((Packet)info)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		checkClosedXA()<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setId(this.packetIdGenerator.generateId())<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setXid(x)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setType(107)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		this.connection.syncSendPacket((Packet)info)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setXid(x)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		checkClosedXA()<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setId(this.packetIdGenerator.generateId())<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setType(110)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		checkClosedXA()<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setId(this.packetIdGenerator.generateId())<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setType(111)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		checkClosedXA()<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setId(this.packetIdGenerator.generateId())<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setType(112)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		info.setTransactionTimeout(seconds)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		this.connection.asyncSendPacket((Packet)info)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		doClose()<bcd8b0c2eb1fce714eab6cef0d771acc>
+		this.closed.set(true)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		checkClosedXA()<bcd8b0c2eb1fce714eab6cef0d771acc>
+		setXid(xid)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		xAException1.initCause(original)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		xae.initCause((Throwable)e)<bcd8b0c2eb1fce714eab6cef0d771acc>
+		throw new TransactionInProgressException("Cannot rollback() inside an XASession")<c430398eddaae7035e668c839b238372>
+		throw new TransactionInProgressException("Cannot commit() inside an XASession")<c430398eddaae7035e668c839b238372>
+		super(theConnection, 0)<e1266d71c305ae3767d9d953acaf0aae>
+		return getResourceManagerId().equals(xar.getResourceManagerId())<e69f6d3867da72fd745251772018782f>
+		return receipt.getResult()<e69f6d3867da72fd745251772018782f>
+		return (Xid[])receipt.getResult()<e69f6d3867da72fd745251772018782f>
+		return receipt.getResult()<e69f6d3867da72fd745251772018782f>
+		return ((ActiveMQXAConnection)this.connection).getResourceManagerId()<e69f6d3867da72fd745251772018782f>
+
+	E:\CLionProjects\myProject\activemq_mini\AlreadyClosedException.java
+		super("Cannot use " + description + " as it has already been closed", "AMQ-1001")<64e1a6dbdc75245966ce44dd7e78f6f4>
+
+	E:\CLionProjects\myProject\activemq_mini\axis\ActiveMQVendorAdapter.java
+		properties.put("transport.jms.ConnectionFactoryClass", QCF_CLASS)<e1266d71c305ae3767d9d953acaf0aae>
+		properties.put("transport.jms.ConnectionFactoryClass", TCF_CLASS)<e1266d71c305ae3767d9d953acaf0aae>
+		properties.put("brokerURL", jmsUrl.getPropertyValue("brokerURL"))<e1266d71c305ae3767d9d953acaf0aae>
+		properties.put("defaultUser", jmsUrl.getPropertyValue("defaultUser"))<e1266d71c305ae3767d9d953acaf0aae>
+		properties.put("defaultPassword", jmsUrl.getPropertyValue("defaultPassword"))<e1266d71c305ae3767d9d953acaf0aae>
+		properties.put("embeddedBroker", jmsUrl.getPropertyValue("embeddedBroker"))<e1266d71c305ae3767d9d953acaf0aae>
+		return super.getQueueConnectionFactory(properties)<e69f6d3867da72fd745251772018782f>
+		return super.getTopicConnectionFactory(properties)<e69f6d3867da72fd745251772018782f>
+
+
+
