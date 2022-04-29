@@ -50,16 +50,16 @@ The CXX compiler identification is MSVC, found in "E:/CLionProjects/myProject/cm
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: E:/CLionProjects/myProject/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/DELL/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/ninja/win/ninja.exe cmTC_71154 && [1/2] Building C object CMakeFiles\cmTC_71154.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_71154.exe
+Run Build Command(s):C:/Users/DELL/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/ninja/win/ninja.exe cmTC_fc12f && [1/2] Building C object CMakeFiles\cmTC_fc12f.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_fc12f.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: E:/CLionProjects/myProject/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/DELL/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/ninja/win/ninja.exe cmTC_945e2 && [1/2] Building CXX object CMakeFiles\cmTC_945e2.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_945e2.exe
+Run Build Command(s):C:/Users/DELL/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/ninja/win/ninja.exe cmTC_2724e && [1/2] Building CXX object CMakeFiles\cmTC_2724e.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_2724e.exe
 
 
 

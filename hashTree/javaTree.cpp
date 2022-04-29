@@ -8,7 +8,7 @@
 #include <iostream>
 
 #include "javaTree.h"
-#include "../Parser/file_parser.h"
+#include "../Parser/btc_file_parser.h"
 
 using namespace std;
 

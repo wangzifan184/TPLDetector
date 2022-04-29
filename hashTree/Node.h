@@ -41,8 +41,12 @@ private:
     string file_path;
     string feature_cascade;
     string feature_md5;
+    string fine_feature_cascade;
+    string fine_feature_md5;
     bool f_cas_exists;
     bool f_md5_exists;
+    bool ff_cas_exists;
+    bool ff_md5_exists;
 public:
     cNode(vector<mNode*> mNodes_vec, string _file_path);
 
@@ -54,6 +58,10 @@ public:
 
     string get_coarse_feature_md5();
 
+    string get_fine_feature_cascade();
+
+    string get_fine_feature_md5();
+
     string get_file();
 
     ~cNode()=default;
@@ -63,18 +71,26 @@ class mNode{
 private:
     vector<string> args_type;
     string raw_descriptor;
+    vector<string> raw_instructions;
     string return_type;
     string feature;
+    string fine_feature;
     bool f_exists;
 public:
     //descriptor: return_type(arg1_type,arg2_type,...)
-    explicit mNode(string descriptor);
+    mNode(string descriptor, vector<string> instructions);
+
+    void set_coarse_feature();
+
+    void set_fine_feature();
 
     string get_descriptor();
 
     string get_coarse_feature();
 
     string get_raw_descriptor();
+
+    string get_fine_feature();
 
     ~mNode()=default;
 };
