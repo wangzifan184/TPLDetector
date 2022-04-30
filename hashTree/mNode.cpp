@@ -29,20 +29,13 @@ void mNode::set_coarse_feature(){
         if(right<raw_descriptor.size()){
             string new_arg;
             new_arg.assign(raw_descriptor,left,right-left);
-            args_type.push_back(new_arg);
+            if(new_arg.length()){
+                args_type.push_back(new_arg);
+            }
         }
         if(raw_descriptor[right]==')') break;
         ++right;
         while(raw_descriptor[right]==' ') ++right;
-    }
-    //argument type in args_type has form [type name].
-    //delete argument name in arg_type
-    for(auto & str:args_type){
-        int cut=str.length()-1;
-        while(cut>=0 && str[cut]!=' ') --cut;
-        while(cut>=0 && str[cut]==' ') --cut;
-        //delete cut+1:end
-        str.erase(cut+1,str.length()-1-cut);
     }
 
     //delete method name in return_type

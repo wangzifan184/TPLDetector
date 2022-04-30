@@ -30,7 +30,7 @@ void log_tree(javaTree jTree, const string& path){
     for(auto cls:jTree.get_pNode().get_class_nodes()){
         log_stream<<"\t"<<cls.get_file()<<endl;
         for(auto mhd:cls.get_methods()){
-            log_stream<<"\t\t"<<mhd->get_raw_descriptor()<<"<"<<mhd->get_coarse_feature()<<">\n";
+            log_stream<<"\t\t"<<mhd->get_raw_descriptor()<<" <"<<mhd->get_coarse_feature()<<">"<<" <"<<mhd->get_fine_feature()<<">\n";
         }
         log_stream<<endl;
     }

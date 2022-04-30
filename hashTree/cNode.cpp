@@ -70,6 +70,7 @@ string cNode::get_fine_feature_cascade() {
         for(auto method_p:mNodes) fine_feature_cascade+=method_p->get_fine_feature();
         ff_cas_exists= true;
     }
+    return fine_feature_cascade;
 }
 
 string cNode::get_fine_feature_md5() {

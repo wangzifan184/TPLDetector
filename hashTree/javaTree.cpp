@@ -28,7 +28,7 @@ vector<cNode> javaTree::collect_cNodes(string dir) {
     struct _finddata_t file_info;
     handle=_findfirst((dir+"*").c_str(),&file_info);
     do{
-        if(file_info.attrib==_A_SUBDIR && file_info.name[0]!='.'){
+        if((file_info.attrib&_A_SUBDIR) && file_info.name[0]!='.'){
             string subdir=dir+file_info.name+"\\";
             vector<cNode> subdir_cNodes= collect_cNodes(subdir);
             cNodes.insert(cNodes.end(),subdir_cNodes.begin(),subdir_cNodes.end());
@@ -56,8 +56,8 @@ bool javaTree::is_java_file(char *file_name) {
     int ptr=0;
     while(file_name[ptr]!='\0') ++ptr;
     if(ptr<=5) return false;
-    string extension(file_name+ptr-5,5);
-    return (extension==".java");
+    string extension(file_name+ptr-4,4);
+    return (extension==".txt");
 }
 
 cNode javaTree::gen_cNode(string file_path) {

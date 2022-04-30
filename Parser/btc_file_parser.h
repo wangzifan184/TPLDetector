@@ -43,12 +43,18 @@ vector<feature> get_features_from_file(string file_path){
     vector<feature> features;
     regex reg(R"(\s\s(\w+\s)+((\w+\.)+\w+\s)?\w+\(.*\).*;)");
 
+    regex reg_constructor(R"(\s\s(\w+\s)+((\w+\.)+)\w+\(.*\).*;)");
+
     while(getline(fin, buf)){
-        if(regex_match(buf, reg)){
+        if(regex_match(buf, reg) || regex_match(buf, reg_constructor)){
             feature f;
             trim(buf);
             f.coarse=buf;
             getline(fin, buf);
+            if(buf.find("Code")==string::npos) {
+                features.push_back(f);
+                continue;
+            }
             while(getline(fin, buf)){
                 if(buf.length()>8 && buf[8]==':'){
                     string ins;
@@ -65,15 +71,15 @@ vector<feature> get_features_from_file(string file_path){
 }
 
 
-vector<mNode> get_methods_from_file(string file_path){
+vector<mNode*> get_methods_from_file(string file_path){
 
-    vector<mNode> methods;
+    vector<mNode*> methods;
 
     auto features = get_features_from_file(file_path);
 
     for(const auto& f:features){
-        mNode new_mNode(f.coarse, f.fine);
-        methods.push_back(new_mNode);
+        mNode *node_ptr = new mNode(f.coarse, f.fine);
+        methods.push_back(node_ptr);
     }
 
     return methods;
